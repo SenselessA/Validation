@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="/style/style.css" rel="stylesheet">
+    <title>Validation</title>
+</head>
+
+<body>
+    <form class='wrapper'>
+        <h1>Создать нового пользователя</h1>
+        <div class='input-wrapper'>
+            <label for="login"></label>
+            <input class="input" id='login' type="text" name="login" placeholder="Введите логин">
+            <p>Логин должен содержать 5-12 символов</p>
+        </div>
+        <div class='input-wrapper'>
+            <label for="password"></label>
+            <input class="input" id='password' type="text" name="password" placeholder="Введите пароль">
+            <p>Пароль должен содержать буквы, цифры (@, _ и - тоже допускаются) и состоять из 8 - 20 символов</p>
+        </div>
+        <div class='input-wrapper'>
+            <label for="email"></label>
+            <input class="input" id='email' type="text" name="email" placeholder="Введите почту">
+            <p>Укажите правильную форму Email'a, Пример: iam@something.com </p>
+        </div>
+        <div class='input-wrapper'>
+            <label for="telephone"></label>
+            <input class="input" id='telephone' type="text" name="telephone" placeholder="Введите телефон">
+            <p>Телефон должен быть правильного формата (11 цифр)</p>
+        </div>
+        <div class='input-wrapper'>
+            <label for="profileLink"></label>
+            <input class="input" id='profileLink' type="text" name="profileLink" placeholder="Введите ссылку профиля">
+            <p>Ссылка должна содежрать только строчные буквы, номера и дефисы, а также состоять из 8 - 20 символов</p>
+        </div>
+        <div class='input-wrapper'>
+            <input class="btn" type="submit">
+        </div>
+    </form>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
